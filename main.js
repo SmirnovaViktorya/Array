@@ -219,7 +219,7 @@ let users14 = [
 
 let result = users14.reduce(function (total, amount) {
     if (amount.sex == 'man') {
-        total.men.push(amount)
+        total.man.push(amount)
     } else total.women.push(amount)
     return total
 }, { man: [], women: [] })
