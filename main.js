@@ -207,6 +207,25 @@ let sum2 = arr2.reduce(function (a, b) {
 
 console.log(sum2);
 
+/************************ TASK 14 ДЗ */
+
+let users14 = [
+    { name: 'John', sex: 'man' },
+    { name: 'Andrew', sex: 'man' },
+    { name: 'Tom', sex: 'women' },
+    { name: 'Alex', sex: 'man' },
+    { name: 'Kate', sex: 'women' }
+]
+
+let result = users14.reduce(function (total, amount) {
+    if (amount.sex == 'man') {
+        total.men.push(amount)
+    } else total.women.push(amount)
+    return total
+}, { man: [], women: [] })
+
+console.log(result)
+
 /************************ TASK 15 ДЗ */
 
 function findInd(arr, el) {
